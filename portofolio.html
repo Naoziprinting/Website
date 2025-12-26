@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Naozi Printing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://i.imgur.com/zTIarFS.jpeg" alt="Naozi Printing Logo">
+                <span>Naozi Printing</span>
+            </a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="services.html" class="nav-link">Layanan</a>
+                <a href="portfolio.html" class="nav-link active">Portofolio</a>
+                <a href="order.html" class="nav-link">Pesan Sekarang</a>
+                <a href="login.html" class="nav-link btn-login">Masuk</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <section class="portfolio-header">
+        <div class="container">
+            <h1>Galeri Hasil Cetakan Kami</h1>
+            <p>Lihat karya-karya terbaik yang telah kami hasilkan untuk berbagai klien</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="undangan">Undangan</button>
+                <button class="filter-btn" data-filter="kartu-nama">Kartu Nama</button>
+                <button class="filter-btn" data-filter="foto">Foto</button>
+                <button class="filter-btn" data-filter="sertifikat">Sertifikat</button>
+                <button class="filter-btn" data-filter="digital">Cetak Digital</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="grid">
+                <!-- Undangan Items -->
+                <div class="portfolio-item" data-category="undangan">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Undangan Pernikahan">
+                        <div class="portfolio-overlay">
+                            <h3>Undangan Pernikahan Premium</h3>
+                            <p>Bahan Art Carton 310gsm dengan finishing foil gold</p>
+                            <span class="portfolio-tag">Wedding</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="undangan">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Undangan Khitanan">
+                        <div class="portfolio-overlay">
+                            <h3>Undangan Khitanan</h3>
+                            <p>Desain modern dengan spot UV</p>
+                            <span class="portfolio-tag">Khitanan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kartu Nama Items -->
+                <div class="portfolio-item" data-category="kartu-nama">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1600003263720-95b45a4035d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Kartu Nama Perusahaan">
+                        <div class="portfolio-overlay">
+                            <h3>Kartu Nama Perusahaan</h3>
+                            <p>Bahan ivory 400gsm dengan emboss</p>
+                            <span class="portfolio-tag">Corporate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="kartu-nama">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Kartu Nama Kreatif">
+                        <div class="portfolio-overlay">
+                            <h3>Kartu Nama Kreatif</h3>
+                            <p>Cutting shape khusus untuk desainer</p>
+                            <span class="portfolio-tag">Creative</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto Items -->
+                <div class="portfolio-item" data-category="foto">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cetak Foto Keluarga">
+                        <div class="portfolio-overlay">
+                            <h3>Cetak Foto Keluarga</h3>
+                            <p>Ukuran 10R dengan frame kayu</p>
+                            <span class="portfolio-tag">Family</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="foto">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cetak Foto Wedding">
+                        <div class="portfolio-overlay">
+                            <h3>Cetak Foto Wedding</h3>
+                            <p>Canvas print 30x40 inch</p>
+                            <span class="portfolio-tag">Wedding</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sertifikat Items -->
+                <div class="portfolio-item" data-category="sertifikat">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sertifikat Seminar">
+                        <div class="portfolio-overlay">
+                            <h3>Sertifikat Seminar</h3>
+                            <p>Bahan kertas premium dengan border emas</p>
+                            <span class="portfolio-tag">Seminar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Printing Items -->
+                <div class="portfolio-item" data-category="digital">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1565689221354-d87f85d4aee2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Banner Promosi">
+                        <div class="portfolio-overlay">
+                            <h3>Banner Promosi</h3>
+                            <p>Banner vinyl 3x6 meter untuk event</p>
+                            <span class="portfolio-tag">Promotion</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="digital">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Poster Event">
+                        <div class="portfolio-overlay">
+                            <h3>Poster Event</h3>
+                            <p>Poster A2 untuk konser musik</p>
+                            <span class="portfolio-tag">Event</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Apa Kata Klien Kami</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Hasil cetakan undangan pernikahan saya sangat memuaskan. Kualitasnya premium dan sesuai dengan ekspektasi. Terima kasih Naozi Printing!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah">
+                        <div>
+                            <h4>Sarah Wijaya</h4>
+                            <span>Klien Wedding</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Kartu nama untuk perusahaan kami dibuat dengan sangat profesional. Desainnya elegant dan hasil cetaknya tajam."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Budi">
+                        <div>
+                            <h4>Budi Santoso</h4>
+                            <span>Director, TechCorp</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Pelayanan cepat dan hasil foto yang dicetak sangat bagus. Warna sesuai dengan file asli. Sangat recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Dewi">
+                        <div>
+                            <h4>Dewi Anggraeni</h4>
+                            <span>Photographer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Siap Mewujudkan Ide Anda?</h2>
+            <p>Pesan sekarang dan dapatkan hasil cetakan terbaik untuk kebutuhan Anda</p>
+            <a href="order.html" class="btn btn-primary btn-large">Mulai Pemesanan</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Naozi Printing</h3>
+                <p>Solusi percetakan digital profesional untuk semua kebutuhan Anda.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/6281234567890"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p><i class="fas fa-envelope"></i> naoziprinting@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +62 812 3456 7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="services.html">Layanan</a>
+                <a href="portfolio.html">Portofolio</a>
+                <a href="order.html">Pemesanan</a>
+                <a href="login.html">Akun Saya</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Naozi Printing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+  </html>
