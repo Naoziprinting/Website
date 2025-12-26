@@ -1,0 +1,234 @@
+/* Services Page Styles */
+.services-header {
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary-light) 100%);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.services-header h1 {
+    font-size: 3rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.services-header p {
+    font-size: 1.2rem;
+    color: var(--gray-dark);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Main Services */
+.main-services {
+    padding: 60px 0;
+}
+
+.service-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.service-detail.reverse {
+    direction: rtl;
+}
+
+.service-detail.reverse .service-content {
+    direction: ltr;
+}
+
+.service-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.service-image img:hover {
+    transform: translateY(-10px);
+}
+
+.service-content h2 {
+    font-size: 2.2rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.service-content h2 i {
+    color: var(--black);
+    background-color: var(--primary-light);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--gray-dark);
+    margin-bottom: 2rem;
+}
+
+.service-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.service-features li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--gray-dark);
+}
+
+.service-features li i {
+    color: var(--success);
+    background-color: #e8f5e9;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-pricing {
+    background: linear-gradient(135deg, var(--gray-light) 0%, #f0f0f0 100%);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid var(--black);
+}
+
+.service-pricing h3 {
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.service-pricing .price {
+    font-size: 2rem;
+    color: var(--black);
+    font-weight: 700;
+}
+
+/* All Services Grid */
+.all-services {
+    padding: 60px 0;
+    background-color: var(--gray-light);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-item {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s;
+    border: 1px solid #eee;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border-color: var(--primary-light);
+}
+
+.service-item .service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary-light) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.service-item .service-icon i {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.service-item h3 {
+    color: var(--black);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.service-item p {
+    color: var(--gray-dark);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.price-tag {
+    display: inline-block;
+    background-color: var(--primary-light);
+    color: var(--black);
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.cta-buttons .btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .service-detail {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .service-detail.reverse {
+        direction: ltr;
+    }
+    
+    .service-image {
+        order: -1;
+    }
+    
+    .services-header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+  }
