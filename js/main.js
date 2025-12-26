@@ -35,7 +35,7 @@ function validatePhone(phone) {
 }
 
 // API Configuration
-const API_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE'; // Ganti dengan URL Apps Script
+const API_URL = 'https://script.google.com/macros/s/AKfycbxruvo7gl2Cv5piZCKYAXUEYg_wfs2vtwJP9-mwVWGyH6w7a4zzgqNLQOVZKLH_3DeNWQ/exec'; // Ganti dengan URL Apps Script
 
 // Check Login Status
 function checkAuth() {
